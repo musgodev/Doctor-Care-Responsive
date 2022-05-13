@@ -1,0 +1,342 @@
+/* Main - Section */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    padding-top: calc(3rem + var(--nav-height));
+    width: 100vw;
+}
+
+.main::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(108.3rem + var(--nav-height));
+    background-color: var(--brand-green-light);
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.main__subtitle {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--brand-green);
+    text-align: center;
+}
+
+.main__title {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 3.4rem;
+    text-align: center;
+    line-height: 4.4rem;
+    color: var(--gray-headline);
+}
+
+.main__text {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.7rem;
+    color: var(--gray-paragraph);
+}
+
+.main__button {
+    background-color: var(--brand-green);
+    padding: 1.6rem 3.2rem;
+    border-radius: 5rem;
+    border: none;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--white);
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.main__button:hover {
+    background-color: var(--brand-green-hover);
+    transition: all .7s;
+}
+
+.main__photo {
+    object-position: 0 2rem;
+    width: 26.16rem;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid var(--brand-green-light);
+    border-radius: 1rem;
+    width: 100%;
+    background-color: var(--brand-beige);
+    gap: 7rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+}
+
+.box-info div h2 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: var(--gray-headline);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.box-info div p {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--brand-green);
+    text-align: center;
+}
+
+/* Services - Section */
+
+.sevice {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+
+.service__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.service__header h4 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--brand-green);
+    line-height: 2.1rem;
+    text-align: center;
+}
+
+.service__header h2 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--gray-headline);
+    line-height: 3.9rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.service__group-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.service__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.6rem;
+    
+    height: fit-content;
+    padding: 2.4rem;
+    margin-bottom: 3.2rem;
+
+    background-color: white;
+    border: 1px solid var(--brand-green-light);
+}
+
+.service__card h2 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+    color: var(--gray-headline);
+}
+
+.service__card p {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--gray-paragraph);
+}
+
+/* About - Section */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--brand-beige);
+    padding-block: 10rem;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__content h4 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: var(--brand-green);
+    margin-bottom: 1.6rem;
+}
+
+.about__content h2 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: var(--gray-headline);
+    margin-bottom: 2.4rem;
+}
+
+.about__content p {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--gray-paragraph);
+    margin-bottom: 6rem;
+}
+
+.about__photo {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+
+/* Contact - Section */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-block: 10rem;
+}
+
+.contact h2 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: var(--gray-headline);
+    width: 80%;
+    margin-bottom: 3.2rem;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.contact__content p {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--gray-paragraph);
+}
+
+.content__adress {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.content__email {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.contact__button {
+    padding: 1.6rem 3.2rem;
+    width: 85%;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-green);
+    border-radius: 5rem;
+    gap: 1.6rem;
+    margin-top: 5.1rem;
+    margin-bottom: 6rem;
+}
+
+.contact__button:hover {
+    background-color: var(--brand-green-hover);
+    transition: all .7s;
+}
+
+.contact__photo {
+    width: 100%;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--brand-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 28.5rem;
+}
+
+.footer__logo {
+    width: 70%;
+    margin-bottom: 1.2rem;
+}
+
+.footer p {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: white;
+    margin-top: 1.2rem;
+}
+
+.footer ul {
+    margin-top: 3.2rem;
+    display: flex;
+    gap: 3.2rem;
+}
+
+.footer ul li img:hover {
+    transform: scale(1.1);
+}
+
+

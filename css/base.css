@@ -1,0 +1,29 @@
+:root {
+   
+    font-size: 62.5%; /* 1rem = 10px */
+   
+    /* Primary Colors (Backgrounds) */
+
+    --brand-green: #00856F;
+    --brand-green-hover: #00453A;
+    --brand-green-light: #DCE9E2;
+    --brand-light-02: #F7F9F9;
+    --brand-beige: #FFFAF1;
+    --white: #FFF;
+
+    /* Secondary Colors (Titles and Paragraphs) */
+
+    --gray-headline: #061800;
+    --gray-paragraph: #384633;
+    
+
+    /* Tipografias */
+
+    --font: 'DM Sans', sans-serif;
+
+    /* Calc Variables */
+
+    --nav-height: 8rem;
+}
+
+

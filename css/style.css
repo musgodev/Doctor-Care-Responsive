@@ -1,0 +1,164 @@
+/* Global */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--brand-light-02);
+    overflow-x: hidden;
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 2.4rem;
+
+}
+
+
+/* Header */
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: var(--nav-height);
+    min-height: var(--nav-height);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.scroll {
+    width: 100vw;
+    background-color: var(--brand-green);
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Menu Expanded */
+
+.close-menu, .menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu {
+    transform: translateX(100%);
+}
+
+.open-menu {
+    background: none;
+    border: none;
+}
+
+.close-menu {
+    display: none;
+    background-color: var(--brand-green-light);
+    border: none;
+}
+
+body.menu-expanded {
+    overflow: hidden;
+}
+
+
+body.menu-expanded .open-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.menu-expanded .close-menu {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    background-color: var(--brand-green);
+}
+
+body.menu-expanded .menu {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--brand-green);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 400ms;
+
+}
+
+body.menu-expanded .menu ul:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 4.8rem;
+    list-style: none;
+}
+
+body.menu-expanded .menu ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+    gap: 3rem;
+    list-style: none;
+}
+
+body.menu-expanded .menu ul li a {
+    font-family: var(--font);
+    color: white;
+    text-decoration: none;
+    font-size: 2.4rem;
+}
+
+body.menu-expanded .menu .button-menu-expanded {
+    margin-top: 4.8rem;
+    background-color: white;
+    display: inline-block;
+    padding: 1.6rem 4.2rem;
+    border-radius: 3rem;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--brand-green);
+}
+
+/* Return to top */
+
+#backToTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    z-index: 10;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+

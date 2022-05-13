@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./css/reset.css">
+        
+        <!-- Base CSS (Variables) -->
+        <link rel="stylesheet" href="./css/base.css">
+        
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Content Current Page CSS -->
+        <link rel="stylesheet" href="./css/content.css">
+
+        <!-- Media Queries -->
+        <link rel="stylesheet" href="./css/mediaqueries.css">
+        
+        <!-- Import Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Archive JS -->
+        
+
+        <title>DoctorCare</title>
+
+    </head>
+    <body class="">
+        <header class="" id="header">
+            <nav class="header__nav container" id="navigation">
+                <a href="#">
+                    <img src="./assets/logo.svg" alt="Logo da DoctorCare" id="imglogo">
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li> <a href="#home" onclick="closeMenu()" class="link-menu"> Início </a> </li>
+                        <li> <a href="#services" onclick="closeMenu()" class="link-menu"> Serviços </a> </li>
+                        <li> <a href="#about" onclick="closeMenu()"  class="link-menu"> Sobre </a> </li>    
+                    </ul>
+                    <div>
+                        <a href="#contact" class="button-menu-expanded" onclick="closeMenu()" id="buttonMenuDesktop">Agende sua consulta</a>
+                    </div>
+                    <ul class="menu__social-links">
+                        <li> <a href="" target="_blank"> <img src="./assets/icon-insta.svg" alt=""> </a>  </li>
+                        <li> <a href="" target="_blank"> <img src="./assets/icon-fb.svg" alt=""> </a>  </li>
+                        <li> <a href="" target="_blank"> <img src="./assets/icon-youtb.svg" alt=""> </a>  </li> 
+                    </ul>
+                </div>
+                <button class="open-menu" onclick="openMenu()" aria-label="Abrir Menu" aria-expanded="false">
+                    <img src="./assets/mobile-menu.svg" alt="Três barras que representam o botão para abertura do menu na versão mobile" id="menumobile">
+                </button>
+                <button class="close-menu" onclick="closeMenu()" aria-label="Fechar Menu" aria-expanded="true">
+                    <img src="./assets/close-menu.svg" alt="">
+                </button>
+            </nav>
+        </header>
+        
+        <main class="main container" id="home">
+            <div class="main__content">
+                <h4 class="main__subtitle">BOAS-VINDAS A DOCTORCARE 👋</h4>
+                <h1 class="main__title">Assistência médica simplificada para todos</h1>
+                <p class="main__text">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+                <a href="#contact" class="main__button"> <img src="./assets/whatsapp.svg" alt="Logo do WhatsApp"> Agende sua consulta</a>
+            </div>
+            
+            
+            <img src="./assets/photo-woman-main.png" alt="Foto de uma mulher vestindo moletom verde com as duas mãos no peito e sorrindo" class="main__photo">
+            
+        </main>
+
+        <div class="container">
+        <section class="box-info">
+            <div>
+                <h2>+3.500</h2>
+                <p>Pacientes atendidos</p>
+            </div>
+
+            <div>
+                <h2>+15</h2>
+                <p>Especialistas disponíveis</p>
+            </div>
+
+            <div>
+                <h2>+10</h2>
+                <p>Anos no mercado</p>
+            </div>
+        </section>
+        </div>
+
+        <section class="sevice container" id="services">
+            
+            <div class="service__header">
+                <h4>SERVIÇOS</h4>
+                <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+            </div>
+
+            <div class="service__group-cards">
+                
+                <div class="service__card">
+                    <img src="./assets/icon-positive.svg" alt="Icone de acerto verde">
+                    <h2>Problemas digestivos</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                </div>
+
+                <div class="service__card">
+                    <img src="./assets/icon-positive.svg" alt="Icone de acerto verde">
+                    <h2>Saúde Hormonal</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                </div>
+
+                <div class="service__card">
+                    <img src="./assets/icon-positive.svg" alt="Icone de acerto verde">
+                    <h2>Bem-estar mental</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                </div>
+
+            </div>
+
+            <div class="service__group-cards">
+                
+                <div class="service__card">
+                    <img src="./assets/icon-positive.svg" alt="Icone de acerto verde">
+                    <h2>Cuidados Pediátricos</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                </div>
+
+                <div class="service__card">
+                    <img src="./assets/icon-positive.svg" alt="Icone de acerto verde">
+                    <h2>Autoimune e Inflamação</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                </div>
+
+                <div class="service__card">
+                    <img src="./assets/icon-positive.svg" alt="Icone de acerto verde">
+                    <h2>Saúde do Coração</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="about container" id="about">
+            <div class="about__content">
+                <h4>SOBRE NÓS</h4>
+                <h2>Entenda quem somos e por que existimos</h2>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <img class="about__photo" src="./assets/pic-about.jpg" alt="Foto de um doutor sorrindo ao lado de uma mãe segurando sua filha no colo tambem sorrindo">
+        </section>
+
+        <section class="contact container" id="contact">
+            <div class="contact__content">
+                <h2>Entre em contato com a gente!</h2>
+                
+                <div class="content__adress">
+                    <img src="./assets/adress-icon.svg" alt="Icone de Localização">
+                    <p>R. Amauri Souza, 346</p>
+                </div>
+                
+                <div class="content__email">
+                    <img src="./assets/email-icon.svg" alt="Icone de Envelope simbolizando Email">
+                    <p>contato@doctorcare.com</p>
+                </div>
+                <a href="https://www.whatsapp.com/?lang=pt_br" class="contact__button" target="_blank">
+                    <img src="./assets/whatsapp.svg" alt="Logo do WhatsApp"> AGENDE SUA CONSULTA
+                </a>
+            </div>
+            
+            <div>
+                <img  class="contact__photo" src="./assets/pic-contact.jpg" alt="Foto de um jovem Segurando um celular e sorrindo">
+            </div>
+        </section>
+
+        <footer class="footer container">
+            <div>
+                <img src="./assets/logo-white.svg" class="footer__logo" alt="Logo da DoctorCare Branco">
+                <p>©2022 DoctorCare.</p>
+                <p>Todos os direitos reservados.</p>
+            </div>
+            
+            <ul>
+                <li> <a href="https://www.instagram.com" target="_blank"> <img src="./assets/icon-insta.svg" alt="Logo do instagram branco"> </a> </li>
+                <li> <a href="https://www.facebook.com" target="_blank"> <img src="./assets/icon-fb.svg" alt="Logo do facebook branco"> </a> </li>
+                <li> <a href="https://www.youtube.com" target="_blank"> <img src="./assets/icon-youtb.svg" alt="Logo do youtube branco"> </a> </li>        
+            </ul>
+
+        </footer>
+
+        <a href="#home" class="" id="backToTop">
+            <img src="./assets/back-to-top.svg" alt="Botão com seta pra cima para voltar ao topo da pagina">
+        </a>
+
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
