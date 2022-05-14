@@ -11,4 +11,6 @@ Alguns pontos que busquei me atentar a esse projeto foram:
   - HTML Semântico: Tanto para fins de Acessibilidade como questões voltadas a SEO (Search Engine Optimization) busquei utilizar tags semânticas.
 
   - BEM (Block Element Modifier): Visando uma maior facilidade na leitura e manutenção do código eu procurei nomear as classes em inglês e utilizando o padrão BEM.
+
+Você pode conferir o resultado pelo link: https://musgodev.github.io/Doctor-Care-Responsive/
   
