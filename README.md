@@ -4,7 +4,7 @@
 
 Este projeto foi proposto durante a semana do NLW Return da RocketSeat, recebemos um projeto no figma para nos orientarmos porem ficava a nosso critério fazer ou não modificações na UI proposta, eu mudei poucas coisas, como o alinhamento da barra de navegação na versão desktop.
 
-Alguns pontos que busquei me atentar a esse projeto foram:
+Alguns pontos que busquei me atentar nesse projeto foram:
   
   - Responsividade: Utilizei da estratégia Mobile First para o desenvolvimento desse projeto depois de observar que a parte de media queries fica bem mais facil e    intuitiva de ser feita utilizando esse método.
 
