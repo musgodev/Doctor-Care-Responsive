@@ -6,6 +6,7 @@ function onScroll() {
 }
 
 function fixNavOnScroll() {
+    let navigation = document.getElementById("navigation")
     let imgLogo = document.getElementById("imglogo")
     let menuMobile = document.getElementById("menumobile")
     let linkMenu = document.querySelectorAll(".link-menu")
@@ -46,6 +47,7 @@ function showBackToTopButton() {
 }
 
 function openMenu() {
+    let navigation = document.getElementById("navigation")
     let imgLogo = document.getElementById("imglogo")
     let body = document.querySelector("body")
     body.classList.add("menu-expanded")
@@ -55,6 +57,7 @@ function openMenu() {
 }
 
 function closeMenu() {
+    let navigation = document.getElementById("navigation")
     let imgLogo = document.getElementById("imglogo")
     let body = document.querySelector("body")
     let menuMobile = document.getElementById("menumobile")
